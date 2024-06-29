@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+    <style>
+      .fondo {
+        height: 268px;
+        background-image: url(assets/img/hero.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        padding: 70px 150px;
+      }
+      .vector img {
+        width: 50px;
+      }
+      .bg-red {
+        background-color: red;
+      }
+      .letras {
+        width: 60%;
+        display: grid;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .l-1,.l-2,.l-3,.l-4{
+        margin: 0;
+        padding: 0;
+      }
+      .l-1{
+        font-size: 40px;
+        font-weight: 900    ;
+        background-color: aqua;  
+        grid-column: 1/4;  
+        grid-row: 1/2;
+      }
+      .l-2{
+        font-size: 40px;
+        background-color: red;
+        grid-column: 2/3;  
+        grid-row: 2/3;
+      }
+      .l-3{
+        font-size: 80%;
+        background-color: blue;
+        grid-column: 3/4;  
+        grid-row: 2/3;
+        line-height: 75px;
+      }
+      .l-4{
+        font-size: 40px;
+        font-weight: 900;
+        background-color: violet;
+        grid-column: 3/4;  
+        grid-row: 3/4;
+      }
+      footer h3{
+        color: #BC955C;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo m-header">
+        <img src="./assets/img/logo.svg" alt="" />
+      </div>
+      <nav>
+        <div class="links m-header">
+          <a href="">Residentes</a>
+          <a href="">Negocios</a>
+          <a href="">Visitantes</a>
+          <a href="">Gobierno</a>
+        </div>
+      </nav>
+    </header>
+    <main class="fondo">
+      <div class="vector">
+        <img src="./assets/img/hero-vector.svg" alt="" />
+      </div>
+      <div class="bg-red letras">
+        <span class="l-1">APRENDE A PROGRAMAR</span>
+        <span class="l-2">EN LAS</span>
+        <span class="l-3">ESCUELAS DE CODIGO</span>
+        <span class="l-4">DE LA CDMX</span>
+      </div>
+    </main>
+    <footer>
+      <h3>algo</h3>
+      <p>
+        <strong
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+          excepturi cupiditate recusandae illum eos perspiciatis, dolores id
+          illo nemo! Nemo deserunt debitis odio quaerat esse magni excepturi
+          possimus saepe magnam.</strong
+        >
+      </p>
+    </footer>
+  </body>
+</html>
