@@ -16,50 +16,66 @@
         padding: 70px 150px;
       }
       .vector img {
-        width: 50px;
+        width: px;
       }
       .bg-red {
         background-color: red;
       }
       .letras {
-        width: 60%;
+        width: 50%;
         display: grid;
         color: white;
         font-family: Arial, Helvetica, sans-serif;
       }
-      .l-1,.l-2,.l-3,.l-4{
+      .allgrids {
         margin: 0;
         padding: 0;
       }
-      .l-1{
+
+      .one {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        background-color: aqua;
         font-size: 40px;
-        font-weight: 900    ;
-        background-color: aqua;  
-        grid-column: 1/4;  
+        font-weight: 400;
+        margin-left: 30px;
+        align-content: center;
+      }
+
+      .three{
+        grid-column: 1/4;
         grid-row: 1/2;
       }
-      .l-2{
+      
+      .l-2 {
         font-size: 40px;
+        font-weight: 300;
         background-color: red;
-        grid-column: 2/3;  
+        grid-column: 2/3;
         grid-row: 2/3;
+        justify-content: center;
+        /*line-height: 75px;*/
       }
-      .l-3{
+      .l-3 {
         font-size: 40px;
         background-color: blue;
-        grid-column: 3/4;  
+        grid-column: 3/4;
         grid-row: 2/3;
-        line-height: 75px;
       }
-      .l-4{
+      .l-4 {
         font-size: 40px;
         font-weight: 900;
         background-color: violet;
-        grid-column: 3/4;  
+        grid-column: 3/4;
         grid-row: 3/4;
       }
-      footer h3{
-        color: #BC955C;
+      footer h3 {
+        color: #bc955c;
+      }
+
+      .parent {
+        justify-content: center;
+        align-content: center;
       }
     </style>
   </head>
@@ -82,7 +98,7 @@
         <img src="./assets/img/hero-vector.svg" alt="" />
       </div>
       <div class="bg-red letras">
-        <span class="l-1">APRENDE A PROGRAMAR</span>
+        <span class="one">APRENDE A PROGRAMAR</span>
         <span class="l-2">EN LAS</span>
         <span class="l-3">ESCUELAS DE CODIGO</span>
         <span class="l-4">DE LA CDMX</span>
