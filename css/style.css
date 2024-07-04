@@ -1,8 +1,8 @@
 /* creamos la clase logo*/
-.logo {
+/*.logo {
     width: 100%;
     margin: 20px;
-  }
+  }*/
   .logo img {
     width: 100;
   }
@@ -29,3 +29,5 @@
   .m-header{
     margin: 0px 100px;
   }
+
+  
