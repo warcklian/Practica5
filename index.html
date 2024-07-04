@@ -16,11 +16,17 @@
         padding: 70px 150px;
       }
       .vector img {
-        width: px;
+        width: 25px;
       }
-      .bg-red {
+      .grid-container {
         background-color: red;
       }
+
+      .grid-item {
+        display: flex;
+        font-size: 1em; /* Ajusta el tamaño del texto */
+      }
+
       .letras {
         width: 50%;
         display: grid;
@@ -30,59 +36,71 @@
       .allgrids {
         margin: 0;
         padding: 0;
+        
       }
 
-      .one {
+      .l-1 {
         grid-column: 1/4;
         grid-row: 1/2;
-        background-color: aqua;
-        font-size: 40px;
-        font-weight: 400;
+        font-size: 30px;
+        font-weight: 800;
         margin-left: 30px;
         align-content: center;
+        overflow: hidden; /* Asegura que el contenido no exceda la altura establecida */
+        
       }
 
-      .three{
-        grid-column: 1/4;
-        grid-row: 1/2;
-      }
-      
       .l-2 {
-        font-size: 40px;
-        font-weight: 300;
-        background-color: red;
-        grid-column: 2/3;
+        grid-column: 1/2;
         grid-row: 2/3;
-        justify-content: center;
-        /*line-height: 75px;*/
+        font-size: 30px;
+        font-weight: 300;
+        width: 95%;
+        text-align: right;
+        padding-top: 10px;
+        height: 45px; /* Establece la altura fija para las filas */
+        overflow: hidden; /* Asegura que el contenido no exceda la altura establecida */
+        
+        
       }
       .l-3 {
-        font-size: 40px;
-        background-color: blue;
-        grid-column: 3/4;
+        grid-column: 2/4;
         grid-row: 2/3;
-      }
-      .l-4 {
         font-size: 40px;
         font-weight: 900;
-        background-color: violet;
-        grid-column: 3/4;
-        grid-row: 3/4;
+        height: 110px; /* Establece la altura fija para las filas */
+        overflow: hidden; /* Asegura que el contenido no exceda la altura establecida */
       }
+      .l-4 {
+        grid-column: 2/4;
+        grid-row: 3/4;
+        font-size: 20px;
+        font-weight: 500;
+        height: 100px; /* Establece la altura fija para las filas */
+        overflow: hidden; /* Asegura que el contenido no exceda la altura establecida */
+        /*justify-content: center;*/
+        /*align-items: flex-start;*/
+              
+      }
+
       footer h3 {
         color: #bc955c;
       }
 
-      .parent {
-        justify-content: center;
-        align-content: center;
+      .footer {
+        display: grid;
+        place-items: center; /* Centra el contenido horizontal y verticalmente */
+        height: 100px; /* Ajusta la altura del footer según sea necesario */
+        text-align: center; /* Alinea el texto al centro */
       }
+      
+      
     </style>
   </head>
   <body>
     <header>
       <div class="logo m-header">
-        <img src="./assets/img/logo.svg" alt="" />
+      <img src="./assets/img/logo.svg" alt="" />
       </div>
       <nav>
         <div class="links m-header">
@@ -91,28 +109,31 @@
           <a href="">Visitantes</a>
           <a href="">Gobierno</a>
         </div>
-      </nav>
+            </nav>
     </header>
     <main class="fondo">
       <div class="vector">
         <img src="./assets/img/hero-vector.svg" alt="" />
       </div>
-      <div class="bg-red letras">
-        <span class="one">APRENDE A PROGRAMAR</span>
+      <div class="letras">
+        <span class="l-1">APRENDE A PROGRAMAR</span>
         <span class="l-2">EN LAS</span>
-        <span class="l-3">ESCUELAS DE CODIGO</span>
+        <span class="l-3"
+          >ESCUELAS <br />
+          DE CÓDIGO</span
+        >
         <span class="l-4">DE LA CDMX</span>
       </div>
     </main>
-    <footer>
-      <h3>algo</h3>
+    <footer class="footer">
+      <div>
+      <h3>¿Quién se puede inscribir?</h3>
       <p>
-        <strong
-          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-          excepturi cupiditate recusandae illum eos perspiciatis, dolores id
-          illo nemo! Nemo deserunt debitis odio quaerat esse magni excepturi
-          possimus saepe magnam.</strong
-        >
+        <strong>Cualquier persona que quiera aprender a programar código y cuente
+        con 4-8 horas disponibles a la semana</strong>
+      </p>
+      <p>*Menores de edad deberan entrar a las instalaciones compañados de un adulto.
+
       </p>
     </footer>
   </body>
